@@ -1,0 +1,67 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Lato', sans-serif;
+}
+
+
+:tempo{
+  --progresso: 345;
+}
+
+.progress {
+  /*
+  position: absolute;
+    height: 160px;
+    width: 160px;
+    cursor: pointer;
+    left: 1449px;
+    top: 223px;
+    background-color: #e9ecef00 !important;
+    margin: -88px 0 0 -83px;
+    */
+  position: relative;
+  height: 160px;
+  width: 160px;
+  cursor: pointer;
+  // bottom: 634px;
+  // left: 1453px;
+  background-color: #e9ecef00 !important;
+  // margin: -88px 0 0 -83px;
+}
+
+.progress-circle {
+  transform: rotate(-90deg);
+  margin-top: -40px;
+}
+
+.progress-circle-back {
+  fill: none;
+  stroke: #99A29C;
+  stroke-width: 10px;
+}
+
+.progress-circle-prog {
+
+  stroke-dasharray: --progresso 999 !important;
+  fill: none;
+  stroke: #69BF86;
+  stroke-width: 10px;
+   /* 345 é 100% do valor dentro do total de 999 (barra verde)
+  equação ==> [o valor resultante da barra verde] = 345x[a porcetagem que tu quer]/100
+  EX: 172,5 é 50% do circulo. OBS: NÂO ALTERAR O 999
+  */
+  stroke-dashoffset: 0px;
+  transition: stroke-dasharray 0.7s linear 0s;
+}
+
+.progress-text {
+  width: 100%;
+  position: absolute;
+  top: 53px;
+  text-align: center;
+  font-size: 2em;
+}
+
+
+

@@ -1,0 +1,7 @@
+<div>
+
+    <app-progress-circle progresso="[tirar o colchetes e substituir pela porcetagem desejavel]"></app-progress-circle>
+
+  </div>
+
+  ==> Importar ProgressCircleComponent nos modulos em ==> module.ts
